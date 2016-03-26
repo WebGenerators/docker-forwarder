@@ -9,7 +9,7 @@ RUN apk --update add bash socat \
  && rm -rf /var/cache/apk/*
 
 # Settings
-ADD forward.sh /forward.sh
+ADD scripts/forward.sh /forward.sh
 RUN chmod +x /forward.sh
 
 # Start
